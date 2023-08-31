@@ -1,11 +1,10 @@
 //your JS code here. If required.
 window.addEventListener('resize', updateSize);
 function updateSize() {
-    const width = document.getElementById('width');
-    const height = document.getElementById('height');
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
-    width.textContent = windowWidth + 'px';
-    height.textContent = windowHeight + 'px';
+    var div = document.getElementById("sizeInfo");
+    var h1 = div.firstChild;
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+    h1.textContent = `Width : ${windowWidth} and Height : ${windowHeight}`;
 }
 updateSize();
