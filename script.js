@@ -8,4 +8,4 @@ function updateSize() {
     width.textContent = windowWidth + 'px';
     height.textContent = windowHeight + 'px';
 }
-// updateSize();
+updateSize();
