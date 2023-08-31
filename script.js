@@ -1,13 +1,11 @@
 //your JS code here. If required.
-// let height=this.innerHeight;
-// let width=this.innerWidth;
-// let div=document.getElementById("sizeInfo");
-// let h=div.firstChild;
-// h.innerText="Width: "+width+" and Height: "+height;  
-window.addEventListener("resize",function(){
-	let height=this.innerHeight;
-    let width=this.innerWidth;
-	let div=document.getElementById("sizeInfo");
-    let h=div.firstChild;
-    h.innerText="Width: "+width+" and Height: "+height; 
-})
+window.addEventListener('resize', updateSize);
+function updateSize() {
+    const width = document.getElementById('width');
+    const height = document.getElementById('height');
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    width.textContent = windowWidth + 'px';
+    height.textContent = windowHeight + 'px';
+}
+// updateSize();
